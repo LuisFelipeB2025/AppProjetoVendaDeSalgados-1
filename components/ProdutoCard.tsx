@@ -2,8 +2,9 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
 
 const larguraTela = Dimensions.get('window').width;
-const larguraCard = (larguraTela - 80) / 3; // divide a tela em 3 colunas com espaçamento
-
+const alturaTela = Dimensions.get('window').height;
+const larguraCard = (larguraTela - 200) / 1; // divide a tela em 3 colunas com espaçamento
+const alturaCard =  (alturaTela - 50)  / 1;
 type Produto = {
   id: string;
   nome: string;
@@ -18,7 +19,7 @@ type Props = {
 
 export default function ProdutoCard({ produto, quantidade, setQuantidade }: Props) {
   return (
-    <View style={[styles.card, { width: larguraCard, height: larguraCard }]}>
+    <View style={[styles.card, { width: larguraCard, height: alturaCard }]}>
       <Text style={styles.nome} numberOfLines={2}>{produto.nome}</Text>
       <Text style={styles.preco}>R$ {produto.preco}</Text>
       <View style={styles.controle}>
@@ -42,11 +43,11 @@ export default function ProdutoCard({ produto, quantidade, setQuantidade }: Prop
 
 const styles = StyleSheet.create({
   card: {
-    margin: 8,
+    margin: 10,
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 10,
-    padding: 8,
+    padding: 10,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#fff',

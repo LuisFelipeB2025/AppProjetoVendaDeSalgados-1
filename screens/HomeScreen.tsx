@@ -51,7 +51,7 @@ export default function HomeScreen() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.titulo}>Dunamis Salgados / Assados</Text>
+      <Text style={styles.titulo}>Dunamis Salgados/Assados</Text>
 
       <View style={styles.grid}>
         {produtos.slice(0, 9).map(item => (
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   titulo: {
+    fontFamily: 'monospace',
     fontSize: 22,
     fontWeight: 'bold',
     textAlign: 'center',
