@@ -65,7 +65,8 @@ const styles = StyleSheet.create({
     overflow: 'hidden', // garante que cantos da imagem fiquem arredondados
   },
   imagemProduto: {
-    width: '100%',
+    width: '40%',
+    height:'60%',
     aspectRatio: 1.6,
     resizeMode: 'cover',
   },

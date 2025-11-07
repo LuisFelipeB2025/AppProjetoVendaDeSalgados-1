@@ -5,8 +5,8 @@ import ProdutoCard from '../components/ProdutoCard';
 
 
 const produtos = [
-  { id: '1', nome: 'Hambúrguer c/ catupiry e mussarela', preco: 6.0, imagem: require('../assets/Hambúrguer-com-catupiry.png') },
-  { id: '2', nome: 'Hambúrguer c/ cheddar e mussarela', preco: 6.0, imagem: require('../assets/Hambúrguer-com-cheddar.png') },
+  { id: '1', nome: 'Hambúrguer c/ catupiry e mussarela', preco: 6.0, imagem: require('../assets/Hamburger-com-catupiry.png') },
+  { id: '2', nome: 'Hambúrguer c/ cheddar e mussarela', preco: 6.0, imagem: require('../assets/Hamburger-com-cheddar.png') },
   { id: '3', nome: 'Joelho de frango c/ catupiry e mussarela', preco: 6.0, imagem: require('../assets/Mini-assado-joelho-de-queijo-com-presunto.png') }, 
   { id: '4', nome: 'Joelho de queijo c/ presunto e catupiry', preco: 6.0, imagem: require('../assets/Mini-assado-joelho-de-queijo-com-presunto.png') },
   { id: '6', nome: 'Salsicha c/ cheddar e mussarela', preco: 6.0, imagem: require('../assets/Salsicha-com-cheddar.png') },
